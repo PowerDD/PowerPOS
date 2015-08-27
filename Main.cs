@@ -17,5 +17,10 @@ namespace PowerPOS
         {
             InitializeComponent();
         }
+
+        private void toolTipController1_BeforeShow(object sender, DevExpress.Utils.ToolTipControllerShowEventArgs e)
+        {
+            e.Show = false;
+        }
     }
 }
