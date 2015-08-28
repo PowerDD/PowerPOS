@@ -44,7 +44,17 @@
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.btnAge5 = new DevExpress.XtraEditors.CheckButton();
+            this.btnAge4 = new DevExpress.XtraEditors.CheckButton();
+            this.btnAge6 = new DevExpress.XtraEditors.CheckButton();
+            this.btnAge3 = new DevExpress.XtraEditors.CheckButton();
+            this.btnAge2 = new DevExpress.XtraEditors.CheckButton();
+            this.btnAge1 = new DevExpress.XtraEditors.CheckButton();
+            this.btnWoman = new DevExpress.XtraEditors.CheckButton();
+            this.btnMan = new DevExpress.XtraEditors.CheckButton();
+            this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -59,16 +69,6 @@
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.checkButton2 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton3 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton4 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton5 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton6 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton7 = new DevExpress.XtraEditors.CheckButton();
-            this.checkButton8 = new DevExpress.XtraEditors.CheckButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.panelControl7 = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
@@ -79,6 +79,7 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
@@ -87,7 +88,6 @@
             this.panelControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
@@ -255,14 +255,14 @@
             // 
             this.groupControl1.Controls.Add(this.simpleButton1);
             this.groupControl1.Controls.Add(this.labelControl3);
-            this.groupControl1.Controls.Add(this.checkButton8);
-            this.groupControl1.Controls.Add(this.checkButton7);
-            this.groupControl1.Controls.Add(this.checkButton6);
-            this.groupControl1.Controls.Add(this.checkButton5);
-            this.groupControl1.Controls.Add(this.checkButton4);
-            this.groupControl1.Controls.Add(this.checkButton3);
-            this.groupControl1.Controls.Add(this.checkButton2);
-            this.groupControl1.Controls.Add(this.checkButton1);
+            this.groupControl1.Controls.Add(this.btnAge5);
+            this.groupControl1.Controls.Add(this.btnAge4);
+            this.groupControl1.Controls.Add(this.btnAge6);
+            this.groupControl1.Controls.Add(this.btnAge3);
+            this.groupControl1.Controls.Add(this.btnAge2);
+            this.groupControl1.Controls.Add(this.btnAge1);
+            this.groupControl1.Controls.Add(this.btnWoman);
+            this.groupControl1.Controls.Add(this.btnMan);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(3, 150);
             this.groupControl1.Name = "groupControl1";
@@ -270,18 +270,142 @@
             this.groupControl1.TabIndex = 9;
             this.groupControl1.Text = "ข้อมูลลูกค้า";
             // 
-            // checkButton1
+            // simpleButton1
             // 
-            this.checkButton1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.checkButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.25F);
-            this.checkButton1.Appearance.Options.UseFont = true;
-            this.checkButton1.Checked = true;
-            this.checkButton1.Image = global::PowerPOS.Properties.Resources.male;
-            this.checkButton1.Location = new System.Drawing.Point(6, 54);
-            this.checkButton1.Name = "checkButton1";
-            this.checkButton1.Size = new System.Drawing.Size(86, 39);
-            this.checkButton1.TabIndex = 0;
-            this.checkButton1.Text = "ชาย";
+            this.simpleButton1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(189, 25);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(25, 23);
+            this.simpleButton1.TabIndex = 9;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl3.Location = new System.Drawing.Point(6, 21);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(188, 28);
+            this.labelControl3.TabIndex = 8;
+            this.labelControl3.Text = "ลูกค้าทั่วไป";
+            // 
+            // btnAge5
+            // 
+            this.btnAge5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge5.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge5.Appearance.Options.UseFont = true;
+            this.btnAge5.Appearance.Options.UseForeColor = true;
+            this.btnAge5.Location = new System.Drawing.Point(158, 85);
+            this.btnAge5.Name = "btnAge5";
+            this.btnAge5.Size = new System.Drawing.Size(56, 23);
+            this.btnAge5.TabIndex = 7;
+            this.btnAge5.Text = "41-60 ปี";
+            this.btnAge5.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnAge4
+            // 
+            this.btnAge4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge4.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge4.Appearance.Options.UseFont = true;
+            this.btnAge4.Appearance.Options.UseForeColor = true;
+            this.btnAge4.Location = new System.Drawing.Point(158, 54);
+            this.btnAge4.Name = "btnAge4";
+            this.btnAge4.Size = new System.Drawing.Size(56, 23);
+            this.btnAge4.TabIndex = 6;
+            this.btnAge4.Text = "26-40 ปี";
+            this.btnAge4.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnAge6
+            // 
+            this.btnAge6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge6.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge6.Appearance.Options.UseFont = true;
+            this.btnAge6.Appearance.Options.UseForeColor = true;
+            this.btnAge6.Location = new System.Drawing.Point(158, 116);
+            this.btnAge6.Name = "btnAge6";
+            this.btnAge6.Size = new System.Drawing.Size(56, 23);
+            this.btnAge6.TabIndex = 5;
+            this.btnAge6.Text = "เกิน 60 ปี";
+            this.btnAge6.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnAge3
+            // 
+            this.btnAge3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge3.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge3.Appearance.Options.UseFont = true;
+            this.btnAge3.Appearance.Options.UseForeColor = true;
+            this.btnAge3.Location = new System.Drawing.Point(98, 116);
+            this.btnAge3.Name = "btnAge3";
+            this.btnAge3.Size = new System.Drawing.Size(54, 23);
+            this.btnAge3.TabIndex = 4;
+            this.btnAge3.Text = "19-25 ปี";
+            this.btnAge3.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnAge2
+            // 
+            this.btnAge2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge2.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge2.Appearance.Options.UseFont = true;
+            this.btnAge2.Appearance.Options.UseForeColor = true;
+            this.btnAge2.Location = new System.Drawing.Point(98, 85);
+            this.btnAge2.Name = "btnAge2";
+            this.btnAge2.Size = new System.Drawing.Size(54, 23);
+            this.btnAge2.TabIndex = 3;
+            this.btnAge2.Text = "13-18 ปี";
+            this.btnAge2.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnAge1
+            // 
+            this.btnAge1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.btnAge1.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAge1.Appearance.Options.UseFont = true;
+            this.btnAge1.Appearance.Options.UseForeColor = true;
+            this.btnAge1.Location = new System.Drawing.Point(98, 54);
+            this.btnAge1.Name = "btnAge1";
+            this.btnAge1.Size = new System.Drawing.Size(54, 23);
+            this.btnAge1.TabIndex = 2;
+            this.btnAge1.Text = "1-12 ปี";
+            this.btnAge1.CheckedChanged += new System.EventHandler(this.btnAge_CheckedChanged);
+            // 
+            // btnWoman
+            // 
+            this.btnWoman.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.btnWoman.Appearance.Font = new System.Drawing.Font("Tahoma", 9.25F);
+            this.btnWoman.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnWoman.Appearance.Options.UseFont = true;
+            this.btnWoman.Appearance.Options.UseForeColor = true;
+            this.btnWoman.Image = global::PowerPOS.Properties.Resources.female;
+            this.btnWoman.Location = new System.Drawing.Point(6, 100);
+            this.btnWoman.Name = "btnWoman";
+            this.btnWoman.Size = new System.Drawing.Size(86, 39);
+            this.btnWoman.TabIndex = 1;
+            this.btnWoman.Text = "หญิง";
+            this.btnWoman.CheckedChanged += new System.EventHandler(this.btnGender_CheckedChanged);
+            // 
+            // btnMan
+            // 
+            this.btnMan.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.btnMan.Appearance.Font = new System.Drawing.Font("Tahoma", 9.25F);
+            this.btnMan.Appearance.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnMan.Appearance.Options.UseFont = true;
+            this.btnMan.Appearance.Options.UseForeColor = true;
+            this.btnMan.Image = global::PowerPOS.Properties.Resources.male;
+            this.btnMan.Location = new System.Drawing.Point(6, 54);
+            this.btnMan.Name = "btnMan";
+            this.btnMan.Size = new System.Drawing.Size(86, 39);
+            this.btnMan.TabIndex = 0;
+            this.btnMan.Text = "ชาย";
+            this.btnMan.CheckedChanged += new System.EventHandler(this.btnGender_CheckedChanged);
+            // 
+            // panelControl7
+            // 
+            this.panelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.panelControl7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl7.Location = new System.Drawing.Point(3, 145);
+            this.panelControl7.Name = "panelControl7";
+            this.panelControl7.Size = new System.Drawing.Size(221, 5);
+            this.panelControl7.TabIndex = 10;
             // 
             // labelControl2
             // 
@@ -369,7 +493,7 @@
             // 
             this.lblPrice.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblPrice.Font = new System.Drawing.Font("Arial", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.Color.LimeGreen;
+            this.lblPrice.ForeColor = System.Drawing.Color.GreenYellow;
             this.lblPrice.Location = new System.Drawing.Point(0, 17);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(221, 44);
@@ -427,108 +551,6 @@
             this.panelControl1.Size = new System.Drawing.Size(634, 462);
             this.panelControl1.TabIndex = 2;
             // 
-            // checkButton2
-            // 
-            this.checkButton2.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.checkButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 9.25F);
-            this.checkButton2.Appearance.Options.UseFont = true;
-            this.checkButton2.Image = global::PowerPOS.Properties.Resources.female;
-            this.checkButton2.Location = new System.Drawing.Point(6, 100);
-            this.checkButton2.Name = "checkButton2";
-            this.checkButton2.Size = new System.Drawing.Size(86, 39);
-            this.checkButton2.TabIndex = 1;
-            this.checkButton2.Text = "หญิง";
-            // 
-            // checkButton3
-            // 
-            this.checkButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton3.Appearance.Options.UseFont = true;
-            this.checkButton3.Location = new System.Drawing.Point(98, 54);
-            this.checkButton3.Name = "checkButton3";
-            this.checkButton3.Size = new System.Drawing.Size(54, 23);
-            this.checkButton3.TabIndex = 2;
-            this.checkButton3.Text = "1-12 ปี";
-            // 
-            // checkButton4
-            // 
-            this.checkButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton4.Appearance.Options.UseFont = true;
-            this.checkButton4.Location = new System.Drawing.Point(98, 85);
-            this.checkButton4.Name = "checkButton4";
-            this.checkButton4.Size = new System.Drawing.Size(54, 23);
-            this.checkButton4.TabIndex = 3;
-            this.checkButton4.Text = "13-18 ปี";
-            // 
-            // checkButton5
-            // 
-            this.checkButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton5.Appearance.Options.UseFont = true;
-            this.checkButton5.Location = new System.Drawing.Point(98, 116);
-            this.checkButton5.Name = "checkButton5";
-            this.checkButton5.Size = new System.Drawing.Size(54, 23);
-            this.checkButton5.TabIndex = 4;
-            this.checkButton5.Text = "19-25 ปี";
-            // 
-            // checkButton6
-            // 
-            this.checkButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton6.Appearance.Options.UseFont = true;
-            this.checkButton6.Location = new System.Drawing.Point(158, 116);
-            this.checkButton6.Name = "checkButton6";
-            this.checkButton6.Size = new System.Drawing.Size(56, 23);
-            this.checkButton6.TabIndex = 5;
-            this.checkButton6.Text = "เกิน 60 ปี";
-            // 
-            // checkButton7
-            // 
-            this.checkButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton7.Appearance.Options.UseFont = true;
-            this.checkButton7.Checked = true;
-            this.checkButton7.Location = new System.Drawing.Point(158, 54);
-            this.checkButton7.Name = "checkButton7";
-            this.checkButton7.Size = new System.Drawing.Size(56, 23);
-            this.checkButton7.TabIndex = 6;
-            this.checkButton7.Text = "26-40 ปี";
-            // 
-            // checkButton8
-            // 
-            this.checkButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.checkButton8.Appearance.Options.UseFont = true;
-            this.checkButton8.Location = new System.Drawing.Point(158, 85);
-            this.checkButton8.Name = "checkButton8";
-            this.checkButton8.Size = new System.Drawing.Size(56, 23);
-            this.checkButton8.TabIndex = 7;
-            this.checkButton8.Text = "41-60 ปี";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Location = new System.Drawing.Point(6, 21);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(188, 28);
-            this.labelControl3.TabIndex = 8;
-            this.labelControl3.Text = "ลูกค้าทั่วไป";
-            // 
-            // panelControl7
-            // 
-            this.panelControl7.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.panelControl7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl7.Location = new System.Drawing.Point(3, 145);
-            this.panelControl7.Name = "panelControl7";
-            this.panelControl7.Size = new System.Drawing.Size(221, 5);
-            this.panelControl7.TabIndex = 10;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
-            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(189, 25);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(25, 23);
-            this.simpleButton1.TabIndex = 9;
-            // 
             // UcSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,6 +569,7 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
@@ -556,7 +579,6 @@
             this.panelControl3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -582,7 +604,7 @@
         private DevExpress.XtraNavBar.NavBarGroupControlContainer navBarGroupControlContainer1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.CheckButton checkButton1;
+        private DevExpress.XtraEditors.CheckButton btnMan;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PanelControl panelControl6;
         private DevExpress.XtraEditors.TextEdit textEdit1;
@@ -592,13 +614,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private DevExpress.XtraEditors.CheckButton checkButton2;
-        private DevExpress.XtraEditors.CheckButton checkButton8;
-        private DevExpress.XtraEditors.CheckButton checkButton7;
-        private DevExpress.XtraEditors.CheckButton checkButton6;
-        private DevExpress.XtraEditors.CheckButton checkButton5;
-        private DevExpress.XtraEditors.CheckButton checkButton4;
-        private DevExpress.XtraEditors.CheckButton checkButton3;
+        private DevExpress.XtraEditors.CheckButton btnWoman;
+        private DevExpress.XtraEditors.CheckButton btnAge5;
+        private DevExpress.XtraEditors.CheckButton btnAge4;
+        private DevExpress.XtraEditors.CheckButton btnAge6;
+        private DevExpress.XtraEditors.CheckButton btnAge3;
+        private DevExpress.XtraEditors.CheckButton btnAge2;
+        private DevExpress.XtraEditors.CheckButton btnAge1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl7;
