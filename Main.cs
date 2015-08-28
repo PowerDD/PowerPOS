@@ -2,6 +2,9 @@
 using System.Windows.Forms;
 using DevExpress.XtraBars;
 using DevExpress.XtraEditors;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Table;
+using System.Data.SQLite;
 
 namespace PowerPOS
 {
@@ -22,8 +25,8 @@ namespace PowerPOS
 
         private void Main_Load(object sender, EventArgs e)
         {
-            _UC_SALE = new UcSale();
-            _USER_CONTROL = _UC_SALE;
+            ribbon.Minimized = true;
+            AddPanel(Screen.Sale);
         }
         #endregion
         

@@ -45,6 +45,8 @@
             this.btnClaimStatus = new DevExpress.XtraBars.BarButtonItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.btnPermission = new DevExpress.XtraBars.BarButtonItem();
+            this.btnAbout = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLicense = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -57,13 +59,11 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
             this.panelMain = new DevExpress.XtraEditors.PanelControl();
-            this.btnAbout = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnLicense = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
@@ -259,6 +259,26 @@
             this.btnPermission.Name = "btnPermission";
             this.btnPermission.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPermission_ItemClick);
             // 
+            // btnAbout
+            // 
+            this.btnAbout.Caption = "ข้อมูลระบบ";
+            this.btnAbout.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnAbout.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.Glyph")));
+            this.btnAbout.Id = 17;
+            this.btnAbout.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.LargeGlyph")));
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAbout_ItemClick);
+            // 
+            // btnLicense
+            // 
+            this.btnLicense.Caption = "ใบอนุญาต";
+            this.btnLicense.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
+            this.btnLicense.Glyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.Glyph")));
+            this.btnLicense.Id = 18;
+            this.btnLicense.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.LargeGlyph")));
+            this.btnLicense.Name = "btnLicense";
+            this.btnLicense.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLicense_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -352,6 +372,13 @@
             this.ribbonPageGroup5.ShowCaptionButton = false;
             this.ribbonPageGroup5.Text = "หน้าจอ";
             // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnLicense);
+            this.ribbonPageGroup8.ItemLinks.Add(this.btnAbout);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "เกี่ยวกับระบบ";
+            // 
             // repositoryItemComboBox1
             // 
             this.repositoryItemComboBox1.AutoHeight = false;
@@ -382,33 +409,6 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(806, 440);
             this.panelMain.TabIndex = 2;
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Caption = "ข้อมูลระบบ";
-            this.btnAbout.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnAbout.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.Glyph")));
-            this.btnAbout.Id = 17;
-            this.btnAbout.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.LargeGlyph")));
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAbout_ItemClick);
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnLicense);
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnAbout);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "เกี่ยวกับระบบ";
-            // 
-            // btnLicense
-            // 
-            this.btnLicense.Caption = "ใบอนุญาต";
-            this.btnLicense.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnLicense.Glyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.Glyph")));
-            this.btnLicense.Id = 18;
-            this.btnLicense.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.LargeGlyph")));
-            this.btnLicense.Name = "btnLicense";
-            this.btnLicense.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLicense_ItemClick);
             // 
             // Main
             // 
