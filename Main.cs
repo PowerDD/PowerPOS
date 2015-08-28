@@ -1,14 +1,17 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
-using DevExpress.XtraEditors;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Table;
-using System.Data.SQLite;
 
 namespace PowerPOS
 {
-    public partial class Main : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class Main : Form
     {
         #region Parameter
         enum Screen { Sale, ReceiveProduct, Product, Customer, User, Brand, Category, Color, Report, ShopInfo, Config, Claim, Return, Stock };
@@ -17,7 +20,6 @@ namespace PowerPOS
         UcReceiveProduct _UC_RECEIVE_PRODUCT;
         #endregion
 
-        #region Initial
         public Main()
         {
             InitializeComponent();
@@ -25,94 +27,24 @@ namespace PowerPOS
 
         private void Main_Load(object sender, EventArgs e)
         {
-            ribbon.Minimized = true;
-            AddPanel(Screen.Sale);
+            DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "DevExpress Dark Style";
+        }
+
+        #region Menu Click Event
+        private void navExit_ElementClick(object sender, DevExpress.XtraBars.Navigation.NavElementEventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void tileNavPane1_TileClick(object sender, DevExpress.XtraBars.Navigation.NavElementEventArgs e)
+        {
+            if (e.Element.Name == "navSale")
+            {
+                AddPanel(Screen.Sale);
+            }
         }
         #endregion
-        
-        #region Ribbon Event
 
-        private void btnSale_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            AddPanel(Screen.Sale);
-        }
-
-        private void btnReceiveroduct_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            AddPanel(Screen.ReceiveProduct);
-        }
-
-        private void btnProduct_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnCheckStock_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnPurchase_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnPurchaseHistory_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnSaleReport_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnCustomer_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnAddCustomer_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnSaleReportByCustomer_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnWarranty_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnClaimStatus_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnPermission_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void btnLicense_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            FmLicense fm = new FmLicense();
-            fm.ShowDialog(this);
-        }
-
-        private void btnAbout_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void skinRibbonGalleryBarItem1_Gallery_ItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
-        {
-            Console.WriteLine(e.Item.Caption);
-        }
-        #endregion
 
         #region Internal Method
         private void AddPanel(Screen screen)

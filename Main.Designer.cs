@@ -28,447 +28,297 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.btnSale = new DevExpress.XtraBars.BarButtonItem();
-            this.btnReceiveroduct = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaleReport = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCustomer = new DevExpress.XtraBars.BarButtonItem();
-            this.skinRibbonGallery = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.btnPurchase = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAddCustomer = new DevExpress.XtraBars.BarButtonItem();
-            this.btnSaleReportByCustomer = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPurchaseHistory = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProduct = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCheckStock = new DevExpress.XtraBars.BarButtonItem();
-            this.btnWarranty = new DevExpress.XtraBars.BarButtonItem();
-            this.btnClaimStatus = new DevExpress.XtraBars.BarButtonItem();
-            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-            this.btnPermission = new DevExpress.XtraBars.BarButtonItem();
-            this.btnAbout = new DevExpress.XtraBars.BarButtonItem();
-            this.btnLicense = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.repositoryItemComboBox1 = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+            this.tileNavPane1 = new DevExpress.XtraBars.Navigation.TileNavPane();
+            this.tileNavItem1 = new DevExpress.XtraBars.Navigation.TileNavItem();
+            this.navSale = new DevExpress.XtraBars.Navigation.TileNavSubItem();
+            this.navProduct = new DevExpress.XtraBars.Navigation.TileNavSubItem();
+            this.navCustomer = new DevExpress.XtraBars.Navigation.TileNavItem();
+            this.navConfig = new DevExpress.XtraBars.Navigation.TileNavItem();
+            this.navButton2 = new DevExpress.XtraBars.Navigation.NavButton();
+            this.navExit = new DevExpress.XtraBars.Navigation.NavButton();
+            this.navClaim = new DevExpress.XtraBars.Navigation.TileNavItem();
+            this.navPurchase = new DevExpress.XtraBars.Navigation.TileNavSubItem();
+            this.navProductReport = new DevExpress.XtraBars.Navigation.TileNavSubItem();
             this.panelMain = new DevExpress.XtraEditors.PanelControl();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).BeginInit();
             this.SuspendLayout();
             // 
-            // ribbon
-            // 
-            this.ribbon.ApplicationIcon = global::PowerPOS.Properties.Resources.logo;
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem,
-            this.btnSale,
-            this.btnReceiveroduct,
-            this.btnSaleReport,
-            this.btnCustomer,
-            this.skinRibbonGallery,
-            this.btnPurchase,
-            this.btnAddCustomer,
-            this.btnSaleReportByCustomer,
-            this.btnPurchaseHistory,
-            this.btnProduct,
-            this.btnCheckStock,
-            this.btnWarranty,
-            this.btnClaimStatus,
-            this.barStaticItem1,
-            this.btnPermission,
-            this.btnAbout,
-            this.btnLicense});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 19;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1,
-            this.ribbonPage4,
-            this.ribbonPage3,
-            this.ribbonPage2,
-            this.ribbonPage5});
-            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemComboBox1});
-            this.ribbon.ShowToolbarCustomizeItem = false;
-            this.ribbon.Size = new System.Drawing.Size(806, 143);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
-            this.ribbon.Toolbar.ShowCustomizeItem = false;
-            // 
-            // btnSale
-            // 
-            this.btnSale.Caption = "ขายสินค้า";
-            this.btnSale.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSale.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSale.Glyph")));
-            this.btnSale.Id = 4;
-            this.btnSale.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSale.LargeGlyph")));
-            this.btnSale.Name = "btnSale";
-            this.btnSale.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.btnSale.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSale_ItemClick);
-            // 
-            // btnReceiveroduct
-            // 
-            this.btnReceiveroduct.Caption = "รับสินค้า";
-            this.btnReceiveroduct.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnReceiveroduct.Glyph = ((System.Drawing.Image)(resources.GetObject("btnReceiveroduct.Glyph")));
-            this.btnReceiveroduct.Id = 7;
-            this.btnReceiveroduct.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnReceiveroduct.LargeGlyph")));
-            this.btnReceiveroduct.Name = "btnReceiveroduct";
-            this.btnReceiveroduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnReceiveroduct_ItemClick);
-            // 
-            // btnSaleReport
-            // 
-            this.btnSaleReport.Caption = "ยอดขาย";
-            this.btnSaleReport.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSaleReport.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSaleReport.Glyph")));
-            this.btnSaleReport.Id = 8;
-            this.btnSaleReport.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSaleReport.LargeGlyph")));
-            this.btnSaleReport.Name = "btnSaleReport";
-            this.btnSaleReport.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaleReport_ItemClick);
-            // 
-            // btnCustomer
-            // 
-            this.btnCustomer.Caption = "ข้อมูลลูกค้า";
-            this.btnCustomer.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnCustomer.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Glyph")));
-            this.btnCustomer.Id = 9;
-            this.btnCustomer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnCustomer.LargeGlyph")));
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCustomer_ItemClick);
-            // 
-            // skinRibbonGallery
-            // 
-            this.skinRibbonGallery.Caption = "skinRibbonGallery";
-            this.skinRibbonGallery.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            // 
-            // 
-            // 
-            this.skinRibbonGallery.Gallery.ItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(this.skinRibbonGalleryBarItem1_Gallery_ItemClick);
-            this.skinRibbonGallery.Id = 2;
-            this.skinRibbonGallery.Name = "skinRibbonGallery";
-            // 
-            // btnPurchase
-            // 
-            this.btnPurchase.Caption = "สั่งซื้อ";
-            this.btnPurchase.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnPurchase.Glyph = ((System.Drawing.Image)(resources.GetObject("btnPurchase.Glyph")));
-            this.btnPurchase.Id = 3;
-            this.btnPurchase.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnPurchase.LargeGlyph")));
-            this.btnPurchase.Name = "btnPurchase";
-            this.btnPurchase.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPurchase_ItemClick);
-            // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.Caption = "เพิ่มข้อมูล";
-            this.btnAddCustomer.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnAddCustomer.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.Glyph")));
-            this.btnAddCustomer.Id = 4;
-            this.btnAddCustomer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.LargeGlyph")));
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddCustomer_ItemClick);
-            // 
-            // btnSaleReportByCustomer
-            // 
-            this.btnSaleReportByCustomer.Caption = "ยอดขาย";
-            this.btnSaleReportByCustomer.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnSaleReportByCustomer.Glyph = ((System.Drawing.Image)(resources.GetObject("btnSaleReportByCustomer.Glyph")));
-            this.btnSaleReportByCustomer.Id = 7;
-            this.btnSaleReportByCustomer.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnSaleReportByCustomer.LargeGlyph")));
-            this.btnSaleReportByCustomer.Name = "btnSaleReportByCustomer";
-            this.btnSaleReportByCustomer.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSaleReportByCustomer_ItemClick);
-            // 
-            // btnPurchaseHistory
-            // 
-            this.btnPurchaseHistory.Caption = "ประวัติ";
-            this.btnPurchaseHistory.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnPurchaseHistory.Glyph = ((System.Drawing.Image)(resources.GetObject("btnPurchaseHistory.Glyph")));
-            this.btnPurchaseHistory.Id = 8;
-            this.btnPurchaseHistory.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnPurchaseHistory.LargeGlyph")));
-            this.btnPurchaseHistory.Name = "btnPurchaseHistory";
-            this.btnPurchaseHistory.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPurchaseHistory_ItemClick);
-            // 
-            // btnProduct
-            // 
-            this.btnProduct.Caption = "ข้อมูลสินค้า";
-            this.btnProduct.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnProduct.Glyph = ((System.Drawing.Image)(resources.GetObject("btnProduct.Glyph")));
-            this.btnProduct.Id = 9;
-            this.btnProduct.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnProduct.LargeGlyph")));
-            this.btnProduct.Name = "btnProduct";
-            this.btnProduct.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProduct_ItemClick);
-            // 
-            // btnCheckStock
-            // 
-            this.btnCheckStock.Caption = "เช็คสต๊อก";
-            this.btnCheckStock.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnCheckStock.Glyph = ((System.Drawing.Image)(resources.GetObject("btnCheckStock.Glyph")));
-            this.btnCheckStock.Id = 10;
-            this.btnCheckStock.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnCheckStock.LargeGlyph")));
-            this.btnCheckStock.Name = "btnCheckStock";
-            this.btnCheckStock.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCheckStock_ItemClick);
-            // 
-            // btnWarranty
-            // 
-            this.btnWarranty.Caption = "ประกัน";
-            this.btnWarranty.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnWarranty.Glyph = ((System.Drawing.Image)(resources.GetObject("btnWarranty.Glyph")));
-            this.btnWarranty.Id = 12;
-            this.btnWarranty.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnWarranty.LargeGlyph")));
-            this.btnWarranty.Name = "btnWarranty";
-            this.btnWarranty.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnWarranty_ItemClick);
-            // 
-            // btnClaimStatus
-            // 
-            this.btnClaimStatus.Caption = "สถานะ";
-            this.btnClaimStatus.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnClaimStatus.Glyph = ((System.Drawing.Image)(resources.GetObject("btnClaimStatus.Glyph")));
-            this.btnClaimStatus.Id = 13;
-            this.btnClaimStatus.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnClaimStatus.LargeGlyph")));
-            this.btnClaimStatus.Name = "btnClaimStatus";
-            this.btnClaimStatus.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnClaimStatus_ItemClick);
-            // 
-            // barStaticItem1
-            // 
-            this.barStaticItem1.Caption = "กำลัง Sync ข้อมูลเข้าระบบ Cloud";
-            this.barStaticItem1.Glyph = ((System.Drawing.Image)(resources.GetObject("barStaticItem1.Glyph")));
-            this.barStaticItem1.Id = 14;
-            this.barStaticItem1.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barStaticItem1.LargeGlyph")));
-            this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
-            // 
-            // btnPermission
-            // 
-            this.btnPermission.Caption = "สิทธิ์การใช้งาน";
-            this.btnPermission.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnPermission.Glyph = ((System.Drawing.Image)(resources.GetObject("btnPermission.Glyph")));
-            this.btnPermission.Id = 16;
-            this.btnPermission.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnPermission.LargeGlyph")));
-            this.btnPermission.Name = "btnPermission";
-            this.btnPermission.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPermission_ItemClick);
-            // 
-            // btnAbout
-            // 
-            this.btnAbout.Caption = "ข้อมูลระบบ";
-            this.btnAbout.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnAbout.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.Glyph")));
-            this.btnAbout.Id = 17;
-            this.btnAbout.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAbout.LargeGlyph")));
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAbout_ItemClick);
-            // 
-            // btnLicense
-            // 
-            this.btnLicense.Caption = "ใบอนุญาต";
-            this.btnLicense.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.btnLicense.Glyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.Glyph")));
-            this.btnLicense.Id = 18;
-            this.btnLicense.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnLicense.LargeGlyph")));
-            this.btnLicense.Name = "btnLicense";
-            this.btnLicense.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLicense_ItemClick);
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup6,
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "สินค้า";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnSale);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnReceiveroduct);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnProduct);
-            this.ribbonPageGroup3.ItemLinks.Add(this.btnCheckStock);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.ShowCaptionButton = false;
-            this.ribbonPageGroup3.Text = "ข้อมูล";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnPurchase);
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnPurchaseHistory);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.ShowCaptionButton = false;
-            this.ribbonPageGroup6.Text = "การสั่งซื้อ";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.btnSaleReport);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.ShowCaptionButton = false;
-            this.ribbonPageGroup1.Text = "รายงาน";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup7});
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "ลูกค้า";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnCustomer);
-            this.ribbonPageGroup4.ItemLinks.Add(this.btnAddCustomer);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.ShowCaptionButton = false;
-            this.ribbonPageGroup4.Text = "ข้อมูล";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.btnSaleReportByCustomer);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.ShowCaptionButton = false;
-            this.ribbonPageGroup7.Text = "รายงาน";
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup2});
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "งานเครม";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnWarranty);
-            this.ribbonPageGroup2.ItemLinks.Add(this.btnClaimStatus);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.ShowCaptionButton = false;
-            this.ribbonPageGroup2.Text = "ตรวจสอบข้อมูล";
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "การเงิน";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup5,
-            this.ribbonPageGroup8});
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "การตั้งค่า";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.btnPermission);
-            this.ribbonPageGroup5.ItemLinks.Add(this.skinRibbonGallery);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.ShowCaptionButton = false;
-            this.ribbonPageGroup5.Text = "หน้าจอ";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnLicense);
-            this.ribbonPageGroup8.ItemLinks.Add(this.btnAbout);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "เกี่ยวกับระบบ";
-            // 
-            // repositoryItemComboBox1
-            // 
-            this.repositoryItemComboBox1.AutoHeight = false;
-            this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemComboBox1.Name = "repositoryItemComboBox1";
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.ItemLinks.Add(this.barStaticItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 583);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(806, 31);
-            // 
-            // barButtonItem12
-            // 
-            this.barButtonItem12.Caption = "สิทธิ์การใช้งาน";
-            this.barButtonItem12.CategoryGuid = new System.Guid("6ffddb2b-9015-4d97-a4c1-91613e0ef537");
-            this.barButtonItem12.Id = 15;
-            this.barButtonItem12.Name = "barButtonItem12";
+            // tileNavPane1
+            // 
+            this.tileNavPane1.Appearance.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.tileNavPane1.Appearance.Options.UseFont = true;
+            this.tileNavPane1.AppearanceHovered.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.tileNavPane1.AppearanceHovered.Options.UseFont = true;
+            this.tileNavPane1.AppearanceSelected.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.tileNavPane1.AppearanceSelected.Options.UseFont = true;
+            this.tileNavPane1.ButtonPadding = new System.Windows.Forms.Padding(12);
+            this.tileNavPane1.Buttons.Add(this.navButton2);
+            this.tileNavPane1.Buttons.Add(this.navExit);
+            this.tileNavPane1.ContinuousNavigation = true;
+            // 
+            // tileNavCategory1
+            // 
+            // 
+            // tileNavItem1
+            // 
+            this.tileNavItem1.Caption = "สินค้า";
+            this.tileNavItem1.Name = "tileNavItem1";
+            this.tileNavItem1.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.tileNavItem1.OptionsDropDown.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            this.tileNavItem1.OwnerCollection = this.tileNavPane1.DefaultCategory.Items;
+            // 
+            // navSale
+            // 
+            this.navSale.Caption = "ขาย";
+            this.navSale.Name = "navSale";
+            this.navSale.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.navSale.OptionsDropDown.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            // 
+            // tileBarItem5
+            // 
+            this.navSale.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navSale.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navSale.Tile.AppearanceItem.Normal.Options.UseTextOptions = true;
+            this.navSale.Tile.AppearanceItem.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.navSale.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement1.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement1.Image")));
+            tileItemElement1.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleLeft;
+            tileItemElement1.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement1.Text = "ขาย";
+            this.navSale.Tile.Elements.Add(tileItemElement1);
+            this.navSale.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navSale.Tile.Name = "tileBarItem5";
+            // 
+            // navProduct
+            // 
+            this.navProduct.Caption = "ข้อมูล";
+            this.navProduct.Name = "navProduct";
+            this.navProduct.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            // 
+            // tileBarItem6
+            // 
+            this.navProduct.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navProduct.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navProduct.Tile.AppearanceItem.Normal.Options.UseTextOptions = true;
+            this.navProduct.Tile.AppearanceItem.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.navProduct.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement2.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement2.Image")));
+            tileItemElement2.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement2.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement2.Text = "ข้อมูล";
+            this.navProduct.Tile.Elements.Add(tileItemElement2);
+            this.navProduct.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navProduct.Tile.Name = "tileBarItem6";
+            this.tileNavItem1.SubItems.AddRange(new DevExpress.XtraBars.Navigation.TileNavSubItem[] {
+            this.navSale,
+            this.navProduct,
+            this.navPurchase,
+            this.navProductReport});
+            // 
+            // tileBarItem1
+            // 
+            this.tileNavItem1.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.tileNavItem1.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.tileNavItem1.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement5.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement5.Image")));
+            tileItemElement5.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement5.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement5.Text = "สินค้า";
+            this.tileNavItem1.Tile.Elements.Add(tileItemElement5);
+            this.tileNavItem1.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.tileNavItem1.Tile.Name = "tileBarItem1";
+            this.tileNavItem1.Tile.ShowDropDownButton = DevExpress.Utils.DefaultBoolean.False;
+            this.tileNavItem1.Tile.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            // 
+            // navCustomer
+            // 
+            this.navCustomer.Caption = "ลูกค้า";
+            this.navCustomer.Name = "navCustomer";
+            this.navCustomer.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.navCustomer.OwnerCollection = this.tileNavPane1.DefaultCategory.Items;
+            // 
+            // tileBarItem2
+            // 
+            this.navCustomer.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navCustomer.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navCustomer.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement6.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement6.Image")));
+            tileItemElement6.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement6.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement6.Text = "ลูกค้า";
+            this.navCustomer.Tile.Elements.Add(tileItemElement6);
+            this.navCustomer.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navCustomer.Tile.Name = "tileBarItem2";
+            this.navCustomer.Tile.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            // 
+            // navConfig
+            // 
+            this.navConfig.Caption = "การตั้งค่า";
+            this.navConfig.Name = "navConfig";
+            this.navConfig.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.navConfig.OwnerCollection = this.tileNavPane1.DefaultCategory.Items;
+            // 
+            // tileBarItem4
+            // 
+            this.navConfig.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navConfig.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navConfig.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement8.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement8.Image")));
+            tileItemElement8.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement8.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement8.Text = "การตั้งค่า";
+            this.navConfig.Tile.Elements.Add(tileItemElement8);
+            this.navConfig.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navConfig.Tile.Name = "tileBarItem4";
+            this.navConfig.Tile.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            this.tileNavPane1.DefaultCategory.Items.AddRange(new DevExpress.XtraBars.Navigation.TileNavItem[] {
+            this.tileNavItem1,
+            this.navCustomer,
+            this.navClaim,
+            this.navConfig});
+            this.tileNavPane1.DefaultCategory.Name = "tileNavCategory1";
+            this.tileNavPane1.DefaultCategory.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.tileNavPane1.DefaultCategory.OwnerCollection = null;
+            // 
+            // 
+            // 
+            this.tileNavPane1.DefaultCategory.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            this.tileNavPane1.DefaultCategory.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.tileNavPane1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tileNavPane1.Location = new System.Drawing.Point(0, 0);
+            this.tileNavPane1.Name = "tileNavPane1";
+            this.tileNavPane1.OptionsPrimaryDropDown.BackColor = System.Drawing.Color.Empty;
+            this.tileNavPane1.OptionsSecondaryDropDown.BackColor = System.Drawing.Color.Empty;
+            this.tileNavPane1.Size = new System.Drawing.Size(847, 40);
+            this.tileNavPane1.TabIndex = 0;
+            this.tileNavPane1.Text = "tileNavPane1";
+            this.tileNavPane1.TileClick += new DevExpress.XtraBars.Navigation.NavElementClickEventHandler(this.tileNavPane1_TileClick);
+            // 
+            // navButton2
+            // 
+            this.navButton2.Caption = "เมนูหลัก";
+            this.navButton2.IsMain = true;
+            this.navButton2.Name = "navButton2";
+            // 
+            // navExit
+            // 
+            this.navExit.Alignment = DevExpress.XtraBars.Navigation.NavButtonAlignment.Right;
+            this.navExit.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.True;
+            this.navExit.Caption = "ออกจากระบบ";
+            this.navExit.Glyph = ((System.Drawing.Image)(resources.GetObject("navExit.Glyph")));
+            this.navExit.Name = "navExit";
+            this.navExit.ElementClick += new DevExpress.XtraBars.Navigation.NavElementClickEventHandler(this.navExit_ElementClick);
+            // 
+            // navClaim
+            // 
+            this.navClaim.Caption = "เครม";
+            this.navClaim.Name = "navClaim";
+            this.navClaim.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            this.navClaim.OwnerCollection = this.tileNavPane1.DefaultCategory.Items;
+            // 
+            // tileBarItem3
+            // 
+            this.navClaim.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navClaim.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navClaim.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement7.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement7.Image")));
+            tileItemElement7.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement7.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement7.Text = "เครม";
+            this.navClaim.Tile.Elements.Add(tileItemElement7);
+            this.navClaim.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navClaim.Tile.Name = "tileBarItem3";
+            this.navClaim.Tile.ShowItemShadow = DevExpress.Utils.DefaultBoolean.True;
+            // 
+            // navPurchase
+            // 
+            this.navPurchase.Caption = "สั่งซื้อ";
+            this.navPurchase.Name = "navPurchase";
+            this.navPurchase.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            // 
+            // tileBarItem7
+            // 
+            this.navPurchase.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navPurchase.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navPurchase.Tile.AppearanceItem.Normal.Options.UseTextOptions = true;
+            this.navPurchase.Tile.AppearanceItem.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.navPurchase.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement3.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement3.Image")));
+            tileItemElement3.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement3.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement3.Text = "สั่งซื้อ";
+            this.navPurchase.Tile.Elements.Add(tileItemElement3);
+            this.navPurchase.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navPurchase.Tile.Name = "tileBarItem7";
+            // 
+            // navProductReport
+            // 
+            this.navProductReport.Caption = "รายงาน";
+            this.navProductReport.Name = "navProductReport";
+            this.navProductReport.OptionsDropDown.BackColor = System.Drawing.Color.Empty;
+            // 
+            // tileBarItem8
+            // 
+            this.navProductReport.Tile.AppearanceItem.Normal.Font = new System.Drawing.Font("DilleniaUPC", 22F, System.Drawing.FontStyle.Bold);
+            this.navProductReport.Tile.AppearanceItem.Normal.Options.UseFont = true;
+            this.navProductReport.Tile.AppearanceItem.Normal.Options.UseTextOptions = true;
+            this.navProductReport.Tile.AppearanceItem.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.navProductReport.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+            tileItemElement4.Image = ((System.Drawing.Image)(resources.GetObject("tileItemElement4.Image")));
+            tileItemElement4.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileItemElement4.ImageToTextAlignment = DevExpress.XtraEditors.TileControlImageToTextAlignment.Left;
+            tileItemElement4.Text = "รายงาน";
+            this.navProductReport.Tile.Elements.Add(tileItemElement4);
+            this.navProductReport.Tile.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Default;
+            this.navProductReport.Tile.Name = "tileBarItem8";
             // 
             // panelMain
             // 
-            this.panelMain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(0, 143);
+            this.panelMain.Location = new System.Drawing.Point(0, 40);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(806, 440);
-            this.panelMain.TabIndex = 2;
+            this.panelMain.Size = new System.Drawing.Size(847, 351);
+            this.panelMain.TabIndex = 1;
             // 
             // Main
             // 
-            this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 614);
+            this.ClientSize = new System.Drawing.Size(847, 391);
             this.Controls.Add(this.panelMain);
-            this.Controls.Add(this.ribbonStatusBar);
-            this.Controls.Add(this.ribbon);
+            this.Controls.Add(this.tileNavPane1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main";
-            this.Ribbon = this.ribbon;
-            this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Power POS";
+            this.Text = "Main";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelMain)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
-        private DevExpress.XtraBars.BarButtonItem btnSale;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
-        private DevExpress.XtraBars.BarButtonItem btnReceiveroduct;
-        private DevExpress.XtraBars.BarButtonItem btnSaleReport;
-        private DevExpress.XtraBars.BarButtonItem btnCustomer;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage4;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
-        private DevExpress.XtraEditors.Repository.RepositoryItemComboBox repositoryItemComboBox1;
-        private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGallery;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage5;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
-        private DevExpress.XtraBars.BarButtonItem btnPurchase;
-        private DevExpress.XtraBars.BarButtonItem btnAddCustomer;
-        private DevExpress.XtraBars.BarButtonItem btnSaleReportByCustomer;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
-        private DevExpress.XtraBars.BarButtonItem btnPurchaseHistory;
-        private DevExpress.XtraBars.BarButtonItem btnProduct;
-        private DevExpress.XtraBars.BarButtonItem btnCheckStock;
-        private DevExpress.XtraBars.BarButtonItem btnWarranty;
-        private DevExpress.XtraBars.BarButtonItem btnClaimStatus;
-        private DevExpress.XtraBars.BarStaticItem barStaticItem1;
-        private DevExpress.XtraBars.BarButtonItem btnPermission;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem12;
+        private DevExpress.XtraBars.Navigation.TileNavPane tileNavPane1;
+        private DevExpress.XtraBars.Navigation.NavButton navButton2;
+        private DevExpress.XtraBars.Navigation.NavButton navExit;
+        private DevExpress.XtraBars.Navigation.TileNavItem tileNavItem1;
+        private DevExpress.XtraBars.Navigation.TileNavSubItem navPurchase;
+        private DevExpress.XtraBars.Navigation.TileNavSubItem navProductReport;
+        private DevExpress.XtraBars.Navigation.TileNavItem navClaim;
+        private DevExpress.XtraBars.Navigation.TileNavItem navConfig;
+        private DevExpress.XtraBars.Navigation.TileNavSubItem navProduct;
+        private DevExpress.XtraBars.Navigation.TileNavSubItem navSale;
+        private DevExpress.XtraBars.Navigation.TileNavItem navCustomer;
         private DevExpress.XtraEditors.PanelControl panelMain;
-        private DevExpress.XtraBars.BarButtonItem btnAbout;
-        private DevExpress.XtraBars.BarButtonItem btnLicense;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
     }
 }
