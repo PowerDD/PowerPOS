@@ -17,6 +17,7 @@ namespace PowerPOS
         enum Screen { Sale, ReceiveProduct, Product, Customer, User, Brand, Category, Color, Report, ShopInfo, Config, Claim, Return, Stock };
         XtraUserControl _USER_CONTROL;
         UcSale _UC_SALE;
+        UcStock _UC_STOCK;
         UcReceiveProduct _UC_RECEIVE_PRODUCT;
         #endregion
 
@@ -43,6 +44,10 @@ namespace PowerPOS
             {
                 AddPanel(Screen.Sale);
             }
+            else if (e.Element.Name == "navProduct")
+            {
+                AddPanel(Screen.Stock);
+            }
         }
         #endregion
 
@@ -59,6 +64,10 @@ namespace PowerPOS
                 case Screen.ReceiveProduct:
                     if (_UC_RECEIVE_PRODUCT == null) _UC_RECEIVE_PRODUCT = new UcReceiveProduct();
                     _USER_CONTROL = _UC_RECEIVE_PRODUCT;
+                    break;
+                case Screen.Stock:
+                    if (_UC_STOCK == null) _UC_STOCK = new UcStock();
+                    _USER_CONTROL = _UC_STOCK;
                     break;
             }
 

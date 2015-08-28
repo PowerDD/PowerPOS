@@ -124,6 +124,12 @@
     <Compile Include="Param.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\UcStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\UcStock.Designer.cs">
+      <DependentUpon>UcStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\UcReceiveProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
