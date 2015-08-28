@@ -96,7 +96,8 @@ namespace PowerPOS
 
         private void btnLicense_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            FmLicense fm = new FmLicense();
+            fm.ShowDialog(this);
         }
 
         private void btnAbout_ItemClick(object sender, ItemClickEventArgs e)
