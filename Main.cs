@@ -29,7 +29,11 @@ namespace PowerPOS
         private void Main_Load(object sender, EventArgs e)
         {
             DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "DevExpress Dark Style";
-            AddPanel(Screen.Sale);
+
+            string test = Util.GetApiData("/product/info", 
+                string.Format("shop={0}&type=item&value={1}", Param.ShopId, "345"));
+            int x = 0;
+            //AddPanel(Screen.Sale);
         }
 
         #region Menu Click Event
